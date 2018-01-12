@@ -38,7 +38,7 @@ public final class Router: NSObject, RouterType {
   
   public let navigationController: UINavigationController
   
-  init(navigationController: UINavigationController = UINavigationController()) {
+  public init(navigationController: UINavigationController = UINavigationController()) {
     self.navigationController = navigationController
     self.completions = [:]
     super.init()
