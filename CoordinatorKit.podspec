@@ -17,15 +17,15 @@ Pod::Spec.new do |s|
 
   s.name         = "CoordinatorKit"
   s.version      = "1.0.0"
-  s.summary      = "CoordinatorKit."
+  s.summary      = "A collection of classes for the Coordinator Pattern"
   s.description  = <<-DESC
-CoordinatorKit
+  A collection of classes for the Coordinator pattern forked from Ian MacCallum's version.
                    DESC
 
   s.homepage     = "https://github.com/kastelolabs/CoordinatorKit"
 
-  s.license      = "MIT"
-  s.author             = { "Danny Ruiz" => "danny@kastelolabs.co" }
+  s.license      = { type:"MIT", file: "LICENSE" }
+  s.author       = { "Danny Ruiz" => "danny@kastelolabs.co" }
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -33,16 +33,9 @@ CoordinatorKit
   #  the deployment target. You can optionally include the target after the platform.
   #
 
-  # s.platform     = :ios
-  # s.platform     = :ios, "5.0"
-
-  #  When using multiple platforms
-  # s.ios.deployment_target = "5.0"
-  # s.osx.deployment_target = "10.7"
-  # s.watchos.deployment_target = "2.0"
-  # s.tvos.deployment_target = "9.0"
-
-  s.source       = { :git => "https://github.com/kastelolabs/CoordinatorKit.git", tag: "v#{s.version}" }
-  s.source_files  = "CoordinatorKit/**/*.swift"
-  s.public_header_files = "CoordinatorKit/**/*.h"
+  s.platform            = :ios, "8.0"
+  s.swift_version       = "4.1"
+  s.source              = { git: "https://github.com/kastelolabs/CoordinatorKit.git", tag: "v#{s.version}" }
+  s.source_files        = "CoordinatorKit/**/*.swift"
+  # s.public_header_files = "CoordinatorKit/**/*.h"
 end
