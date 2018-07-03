@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "CoordinatorKit"
-  s.version      = "0.0.1"
+  s.version      = "1.0.0"
   s.summary      = "CoordinatorKit."
   s.description  = <<-DESC
 CoordinatorKit
@@ -42,7 +42,7 @@ CoordinatorKit
   # s.watchos.deployment_target = "2.0"
   # s.tvos.deployment_target = "9.0"
 
-  s.source       = { :git => "https://github.com/kastelolabs/CoordinatorKit.git" }
+  s.source       = { :git => "https://github.com/kastelolabs/CoordinatorKit.git", tag: "v#{s.version}" }
   s.source_files  = "CoordinatorKit/**/*.swift"
   s.public_header_files = "CoordinatorKit/**/*.h"
 end
