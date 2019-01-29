@@ -24,7 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	lazy var appRouter: RouterType = Router(navigationController: self.appNavigationController)
     lazy var appCoordinator: AppCoordinator = AppCoordinator(router: self.appRouter, store: self.appStore)
 	
-	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+  func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 		
 		// MARK: Window
 		window = UIWindow(frame: UIScreen.main.bounds)
