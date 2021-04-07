@@ -5,6 +5,8 @@
 //  Created by Ian MacCallum on 10/11/17.
 //
 
+import Foundation
+
 public protocol WindowCoordinatorType: BaseCoordinatorType {
 	var router: WindowRouterType { get }
 }
@@ -29,7 +31,7 @@ open class WindowCoordinator<DeepLinkType>: NSObject, WindowCoordinatorType {
 	
 	public func removeChild(_ coordinator: Coordinator<DeepLinkType>?) {
 		
-		if let coordinator = coordinator, let index = childCoordinators.index(of: coordinator) {
+		if let coordinator = coordinator, let index = childCoordinators.firstIndex(of: coordinator) {
 			childCoordinators.remove(at: index)
 		}
 	}
